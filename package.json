@@ -22,10 +22,8 @@
     },
      {
      "url": "https://github.com/hunterloftis/heroku-buildpack-sfdx"
-     },
-
-     
-  ],
+     }
+   ],
   "dependencies": {
     "bufferutil": "3.0.4",
     "express": "4.16.3",

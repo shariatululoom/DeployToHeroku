@@ -21,7 +21,8 @@ wss.on('connection', (ws) => {
 sfdx.auth.webLogin()
 
 .then(function(){
-  console.log('login called...');  });
+  alert('login called...');  
+});
   ws.on('close', () => console.log('Client disconnected'));
 });
 

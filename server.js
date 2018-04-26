@@ -15,14 +15,14 @@ const wss = new SocketServer({ server });
 
 wss.on('connection', (ws) => {
   console.log('Client connected');
-  var sfdx = require('sfdx-node');
+  //var sfdx = require('sfdx-node');
  
 //authorize a dev hub
-sfdx.auth.webLogin()
+//sfdx.auth.webLogin()
 
-.then(function(){
-  console.log('login called...');  
-});
+//.then(function(){
+  //console.log('login called...');  
+//});
   ws.on('close', () => console.log('Client disconnected'));
 });
 

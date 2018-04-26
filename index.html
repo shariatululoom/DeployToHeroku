@@ -1,3 +1,18 @@
 <html>
-<h1> Deploy!!</h1>
+<script>
+function LOGIN()
+{
+//console.log('Inside fun');
+
+var HOST = location.origin.replace(/^http/, 'ws')
+      var ws = new WebSocket(HOST);
+      var el = document.getElementById('server-time');
+      ws.onmessage = function (event) {
+        el.innerHTML = 'Server time: ' + event.data;
+		console.l
+      };
+}
+</script>
+<h1 id="server-time"> Deploy!!</h1>
+<button onclick="LOGIN()">Click to Login</button>
 </html>

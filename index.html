@@ -8,6 +8,7 @@ var HOST = location.origin.replace(/^http/, 'ws')
       var ws = new WebSocket(HOST);
       var el = document.getElementById('server-time');
       ws.onmessage = function (event) {
+	      alert("successful server cal");
         el.innerHTML = 'Server time: ' + event.data;
 		console.l
       };

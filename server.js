@@ -19,6 +19,7 @@ wss.on('connection', (ws) => {
  
 //authorize a dev hub
 sfdx.auth.webLogin({
+  console.log('inside login'),
     setdefaultdevhubusername: true,
     setalias: 'HubOrg'
 })

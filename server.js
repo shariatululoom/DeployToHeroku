@@ -18,11 +18,7 @@ wss.on('connection', (ws) => {
   var sfdx = require('sfdx-node');
  
 //authorize a dev hub
-sfdx.auth.webLogin({
-  console.log('inside login'),
-    setdefaultdevhubusername: true,
-    setalias: 'HubOrg'
-})
+sfdx.auth.webLogin()
 
 .then(function(){
   console.log('login called...');  

@@ -21,7 +21,7 @@
       "url": "https://github.com/heroku/salesforce-buildpack"
     },
      {
-     "url": "https://github.com/cloudfoundry/nodejs-buildpack"
+     "url": "https://github.com/hunterloftis/heroku-buildpack-sfdx"
      },
 
      

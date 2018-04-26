@@ -17,7 +17,7 @@ wss.on('connection', (ws) => {
   console.log('Client connected');
   var sfdx = require('sfdx-node');
  
-authorize a dev hub
+//authorize a dev hub
 sfdx.auth.webLogin()
 
 .then(function(){

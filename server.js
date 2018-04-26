@@ -21,7 +21,7 @@ authorize a dev hub
 sfdx.auth.webLogin()
 
 .then(function(){
-  //console.log('login called...');  });
+  console.log('login called...');  });
   ws.on('close', () => console.log('Client disconnected'));
 });
 

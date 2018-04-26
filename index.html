@@ -4,7 +4,7 @@ function LOGIN()
 {
 console.log('Inside login');
 
-var HOST = location.origin.replace(/^http/, 'ws')
+var HOST = location.origin.replace(/^https/, 'wss')
       var ws = new WebSocket(HOST);
       var el = document.getElementById('server-time');
       ws.onmessage = function (event) {

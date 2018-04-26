@@ -14,7 +14,7 @@ const server = express()
 const wss = new SocketServer({ server });
 
 wss.on('connection', (ws) => {
-  console.log('Client connected');
+  alert('Client connected');
   var sfdx = require('sfdx-node');
  
 //authorize a dev hub

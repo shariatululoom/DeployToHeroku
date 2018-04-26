@@ -22,6 +22,9 @@
     },
      {
      "url": "https://github.com/hunterloftis/heroku-buildpack-sfdx"
+     },
+     {
+     "url": "https://github.com/cloudfoundry/nodejs-buildpack"
      }
    ],
   "dependencies": {

@@ -13,6 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "buildpacks": [
+    {
+      "url": "https://github.com/wadewegner/salesforce-cli-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
   "dependencies": {
     "bufferutil": "3.0.4",
     "express": "4.16.3",

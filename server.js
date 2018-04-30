@@ -16,16 +16,13 @@ const wss = new SocketServer({ server });
 wss.on('connection', (ws) => {
   console.log('Client connected');
   var sfdx = require('sfdx-node');
-
+ 
 //authorize a dev hub
-sfdx.auth.webLogin({
-    setdefaultdevhubusername: true,
-    setalias: 'HubOrg'
-})
-.then(function(){
-  console.log('Source pushed to scratch org');  
-});
+sfdx.auth.webLogin()
 
+.then(function(){
+  console.log('login called...');  
+});
   ws.on('close', () => console.log('Client disconnected'));
 });
 
